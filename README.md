@@ -175,6 +175,3 @@ cd backend
 uv run python -m src.cli.main --help
 ```
 
-## 许可证
-
-[MIT License](LICENSE)
