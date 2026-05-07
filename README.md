@@ -1,6 +1,6 @@
 # TinyClaw
 
-![](tinyclaw_logo.svg)
+![](README_screenshot.png)
 
 **TinyClaw** 是一个基于 Hello-Agents 框架的个性化 AI Agent，支持流式对话、工具调用、记忆管理和多会话。
 
