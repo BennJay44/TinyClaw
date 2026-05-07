@@ -1,0 +1,134 @@
+/* TinyClaw 基础样式 — 和風配色 */
+
+:root {
+  /* 主题色 — 撫子色 */
+  --color-primary: #D4899C;
+  --color-primary-hover: #E8A0B2;
+  --color-primary-active: #C07888;
+  --color-primary-light: rgba(212, 137, 156, 0.10);
+  --color-primary-glow: rgba(212, 137, 156, 0.18);
+
+  /* 背景色 — 和紙の白 */
+  --color-background: #FAF8F5;
+  --color-surface: #FFFEFB;
+
+  /* 文字色 — 墨 */
+  --color-text: #3E3A36;
+  --color-text-secondary: #8B8D86;
+
+  /* 边框色 — 薄雲 */
+  --color-border: #EDE8E2;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 3px rgba(62, 58, 54, 0.06);
+  --shadow-md: 0 2px 8px rgba(62, 58, 54, 0.08);
+
+  /* 圆角 */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.7;
+  font-family:
+    'Noto Sans SC',
+    'PingFang SC',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
+}
+
+/* ── Ant Design 覆盖 ── */
+
+.ant-btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: var(--color-primary-hover) !important;
+  border-color: var(--color-primary-hover) !important;
+}
+
+.ant-menu-item-selected {
+  background-color: var(--color-primary-light) !important;
+  color: var(--color-primary) !important;
+}
+
+.ant-menu-item-selected::after {
+  border-color: var(--color-primary) !important;
+}
+
+.ant-tag-blue {
+  background-color: var(--color-primary-light) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 2px var(--color-primary-glow) !important;
+}
+
+.ant-input-number:focus,
+.ant-input-number-focused {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 2px var(--color-primary-glow) !important;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--color-primary) !important;
+}
+
+.ant-tabs-ink-bar {
+  background: var(--color-primary) !important;
+}
+
+.ant-switch-checked {
+  background-color: var(--color-primary) !important;
+}
+
+.ant-card {
+  border-radius: var(--radius-md) !important;
+  border-color: var(--color-border) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.ant-btn {
+  border-radius: var(--radius-sm) !important;
+}
+
+.ant-input,
+.ant-input-affix-wrapper {
+  border-radius: var(--radius-sm) !important;
+}
+
+.ant-list-item {
+  transition: background-color 0.2s ease !important;
+}
