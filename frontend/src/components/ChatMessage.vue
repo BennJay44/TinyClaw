@@ -4,7 +4,7 @@ import { Tag } from 'ant-design-vue'
 import { LoadingOutlined } from '@ant-design/icons-vue'
 import { renderMarkdown, formatTime } from '@/utils/markdown'
 import { getToolConfig, formatToolArgs, formatToolResult } from '@/utils/toolDisplay'
-import ClawIcon from '@/assets/tinyclaw_logo.png'
+import ClawIcon from '@/assets/tinyclaw_logo.svg'
 
 // 消息段类型
 interface TextSegment {

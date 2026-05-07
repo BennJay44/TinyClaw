@@ -2,7 +2,7 @@
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { Menu, ConfigProvider } from 'ant-design-vue'
 import { MessageOutlined, SettingOutlined, HistoryOutlined, BookOutlined } from '@ant-design/icons-vue'
-import ClawIcon from '@/assets/tinyclaw_logo.png'
+import ClawIcon from '@/assets/tinyclaw_logo.svg'
 
 const route = useRoute()
 

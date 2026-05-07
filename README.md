@@ -1,8 +1,8 @@
 # TinyClaw
 
-![](README_ui.png)
+![](tinyclaw_logo.svg)
 
-**TinyClaw** 是一个基于 Hello-Agents 框架的个性化 AI Agent 应用，支持流式对话、工具调用、记忆管理和多会话。
+**TinyClaw** 是一个基于 Hello-Agents 框架的个性化 AI Agent，支持流式对话、工具调用、记忆管理和多会话。
 
 ## 功能特性
 
@@ -29,24 +29,23 @@
 TinyClaw/
 ├── backend/                  # Python FastAPI 后端
 │   ├── src/
-│   │   ├── agent/           # Agent 核心（增强版 LLM + SimpleAgent）
-│   │   ├── api/             # REST API 路由（chat/session/config/memory）
-│   │   ├── channels/         # CLI 渠道
+│   │   ├── agent/           # Agent 核心
+│   │   ├── api/             # REST API 路由
+│   │   ├── channels/        # CLI 渠道
 │   │   ├── cli/             # 命令行工具
-│   │   ├── memory/          # 记忆管理（自动捕获 + Memory Flush）
+│   │   ├── memory/          # 记忆管理
 │   │   ├── tools/builtin/   # 内置工具集
 │   │   └── workspace/        # 工作空间管理器
 │   ├── .env.example
 │   └── pyproject.toml
 ├── frontend/                 # Vue 3 前端
 │   ├── src/
-│   │   ├── views/           # 页面（Chat/Sessions/Config/Memory）
-│   │   ├── components/       # 组件（MessageGroup/ToolCard 等）
-│   │   ├── api/             # Axios + SSE 流式请求封装
-│   │   └── assets/          # CSS / SVG 图标
+│   │   ├── views/           # 页面组件
+│   │   ├── components/      # 通用组件
+│   │   ├── api/             # API 请求
+│   │   └── assets/          # 静态资源
 │   ├── .env.example
 │   └── package.json
-├── tinyclaw.png             # 项目 Logo
 └── LICENSE
 ```
 
@@ -59,10 +58,10 @@ TinyClaw/
 - [uv](https://astral.sh/uv/) (Python 包管理器)
 - [pnpm](https://pnpm.io/) (前端包管理器)
 
-### 1. 克隆并进入项目目录
+### 1. 克隆项目
 
 ```bash
-git clone <your-repo-url> TinyClaw
+git clone https://github.com/BennJay44/TinyClaw.git
 cd TinyClaw
 ```
 
@@ -106,7 +105,7 @@ pnpm dev
 
 ### LLM 配置
 
-TinyClaw 支持任何 OpenAI兼容 API，只需修改 `.env`：
+TinyClaw 支持任何 OpenAI 兼容 API，只需修改 `.env`：
 
 ```env
 # MiniMax 示例
@@ -175,10 +174,6 @@ Agent 的配置文件位于 `~/.tinyclaw/workspace/`：
 cd backend
 uv run python -m src.cli.main --help
 ```
-
-### 前端热重载
-
-前端修改会自动重载（Vite HMR）。后端修改由 uvicorn `--reload` 自动重载。
 
 ## 许可证
 

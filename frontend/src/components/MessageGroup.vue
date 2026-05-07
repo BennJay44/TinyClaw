@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { renderMarkdown, formatTime } from '@/utils/markdown'
 import { getToolConfig } from '@/utils/toolDisplay'
 import ToolCard from './ToolCard.vue'
-import ClawIcon from '@/assets/tinyclaw_logo.png'
+import ClawIcon from '@/assets/tinyclaw_logo.svg'
 
 export interface TextSegment {
   type: 'text'

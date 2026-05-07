@@ -8,7 +8,7 @@ import { chatApi } from '@/api/chat'
 import { configApi } from '@/api/config'
 import MessageGroup from '@/components/MessageGroup.vue'
 import type { Message, MessageSegment, TextSegment, ToolSegment, MessageGroup as MsgGroup } from '@/components/MessageGroup.vue'
-import ClawIcon from '@/assets/tinyclaw_logo.png'
+import ClawIcon from '@/assets/tinyclaw_logo.svg'
 
 const SESSION_STORAGE_KEY = 'tinyclaw.lastSessionId'
 
